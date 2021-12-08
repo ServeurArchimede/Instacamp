@@ -1,0 +1,4 @@
+execute at @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}] if block ~ ~-0.5 ~ minecraft:iron_block run say Hop, un nouveau camp autour d'un feu pour @r
+execute at @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}] if block ~ ~-0.5 ~ minecraft:iron_block run setblock ~ ~-1 ~-1 minecraft:structure_block[mode=load]{metadata:"",mirror:"NONE",ignoreEntities:1b,powered:0b,seed:0L,author:"connorofford2000",rotation:"NONE",posX:-7,mode:"LOAD",posY:0,sizeX:0,posZ:-5,integrity:1.0f,showair:0b,name:"minecraft:camp1",sizeY:0,sizeZ:0,showboundingbox:1b}
+execute at @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}] if block ~ ~-0.5 ~ minecraft:iron_block run setblock ~ ~-1 ~ minecraft:redstone_block
+execute at @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}] if block ~ ~-0.5 ~ minecraft:iron_block run kill @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}]
